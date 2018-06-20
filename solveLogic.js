@@ -1,4 +1,4 @@
-import { word, wordSetHidden } from "./gameLogic.js";
+import * as game from "./gameLogic.js";
 
 solveGameAttempt = "Winston Churchill";
 
