@@ -37,6 +37,9 @@ class GameWord {
 };
 
 
+export { word, wordUserView, wordSet, wordSetHidden };
+export { toProperCase };
+
 // TESTING
 // console.log("If user input is " + gameWord + " this will result in the following variables:");
 

@@ -1,3 +1,6 @@
+import { word, wordUserView, wordSet, wordSetHidden } from gameLogic.js;
+import { toProperCase } from gameLogic.js;
+
 var correctAttemptArray = [ ];
 
 function buildCorrectAttemptArray( attempt, wordSet ) {
@@ -10,7 +13,7 @@ function buildCorrectAttemptArray( attempt, wordSet ) {
       i++;
     }
   }
-  console.log( correctAttemptArray ); // change to return once we have front-end functionallity
+  return correctAttemptArray
 };
 
 
@@ -18,5 +21,8 @@ function revealCorrectAttempt( correctAttemptArray, wordSet, wordSetHidden ) {
   for ( i = 0; i < correctAttemptArray.length; i++ ) {
     wordSetHidden.splice( correctAttemptArray[i], 1, wordSet[correctAttemptArray[i]] );
   }
-  console.log( wordSetHidden );
+  return wordSetHidden;
 };
+
+
+export { correctAttemptArray };
