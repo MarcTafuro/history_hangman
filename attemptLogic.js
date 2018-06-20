@@ -1,4 +1,4 @@
-var wordSet = require("./gameLogic.js").wordSet;
+import { wordSet, wordSetHidden } from "./gameLogic.js";
 
 var correctAttemptArray = [ ];
 

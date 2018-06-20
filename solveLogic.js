@@ -1,3 +1,7 @@
+import { word, wordSetHidden } from "./gameLogic.js";
+
+solveGameAttempt = "Winston Churchill";
+
 function solveGame( solveGameAttempt, word ) {
   solveGameAttempt = solveGameAttempt.toUpperCase();
   if ( solveGameAttempt == word ) {

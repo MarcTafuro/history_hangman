@@ -11,7 +11,7 @@ String.prototype.toProperCase = function ( ) {
 };
 
 // this GameWord class creates the gameword formats for the game.
-class GameWord {
+export class GameWord {
   constructor(word) {
     if ( word.length <= 3 ) // Needs to be a word of at least three characters long
       return console.error('Error: Your word must be at least three letters long'); // this will become an error in-game
@@ -34,9 +34,6 @@ class GameWord {
   }
 };
 
-module.exports = { 
-  word: this.word, wordSet: this.wordSet, wordUserView: this.wordUserView, wordSetHidden: this.wordSetHidden 
-};
 
 
 // export { word, wordUserView, wordSet, wordSetHidden };
