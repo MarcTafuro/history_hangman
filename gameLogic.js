@@ -1,22 +1,20 @@
-/* === Testing Variables ===
-let gameWord = "winst0on church1ill!";
-let attempt = "I"; // Needs to be made into a upper case letter
-var solveGameAttempt = "Winston Churchill";
-*/
+//  === Testing Variables ===
+// let gameWord = "winst0on church1ill!";
+// let attempt = "I"; // Needs to be made into a upper case letter
+// var solveGameAttempt = "Winston Churchill";
+// ===========================
 
-// (below) Need to place 'toProperCase' in a seperate file for text manipulation.
 String.prototype.toProperCase = function ( ) {
   return this.replace( /\w\S*/g, function( txt ) {
     return txt.charAt( 0 ).toUpperCase( ) + txt.substr( 1 ).toLowerCase( );
   });
 };
 
-
 // this GameWord class creates the gameword formats for the game.
 class GameWord {
   constructor(word) {
-    if ( word.length <= 3 )
-      return console.error('Error: Your word must be at least three letters long');
+    if ( word.length <= 3 ) // Needs to be a word of at least three characters long
+      return console.error('Error: Your word must be at least three letters long'); // this will become an error in-game
     this.word = word
       .replace( /[^a-zA-Z\s]/g, '' ) // ^a-zA-Z\s captures all non-alpha characters but leaves spaces.
       .toUpperCase(); 
@@ -36,9 +34,15 @@ class GameWord {
   }
 };
 
+module.exports = { 
+  word: this.word, wordSet: this.wordSet, wordUserView: this.wordUserView, wordSetHidden: this.wordSetHidden 
+};
 
-export { word, wordUserView, wordSet, wordSetHidden };
-export { toProperCase };
+
+// export { word, wordUserView, wordSet, wordSetHidden };
+// export { toProperCase };
+
+// const newGame = new GameWord(gameWord);
 
 // TESTING
 // console.log("If user input is " + gameWord + " this will result in the following variables:");

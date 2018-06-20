@@ -1,5 +1,4 @@
-import { word, wordUserView, wordSet, wordSetHidden } from gameLogic.js;
-import { toProperCase } from gameLogic.js;
+var wordSet = require("./gameLogic.js").wordSet;
 
 var correctAttemptArray = [ ];
 
@@ -23,6 +22,3 @@ function revealCorrectAttempt( correctAttemptArray, wordSet, wordSetHidden ) {
   }
   return wordSetHidden;
 };
-
-
-export { correctAttemptArray };
