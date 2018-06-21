@@ -1,0 +1,33 @@
+{
+  "name": "history_hangman",
+  "version": "1.0.0",
+  "description": "Simple 'hangman' type guessing game for history classes. Save your favorite vocabulary words and important names.",
+  "main": "gameLogic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcTafuro/history_hangman.git"
+  },
+  "keywords": [
+    "hangman",
+    "history",
+    "education",
+    "games."
+  ],
+  "author": "Marc Tafuro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcTafuro/history_hangman/issues"
+  },
+  "homepage": "https://github.com/MarcTafuro/history_hangman#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
